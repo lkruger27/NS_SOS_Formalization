@@ -1,5 +1,5 @@
-# Natural Semantics Formalization
-A formalization of Natural Semantics for the imperative programming language **While** following the theory and notation of Semantics with Applications: A formal introduction by Nielson and Nielson.
+# Formalization of Natural and Structural Operational Semantics
+A formalization of Natural and Structural Operational Semantics for the imperative programming language **While** following the theory and notation of Semantics with Applications: A formal introduction by Nielson and Nielson.
 
 [Semantics with Applications: A formal introduction](http://www.cs.ru.nl/~herman/onderwijs/semantics2019/wiley.pdf)
 
@@ -14,6 +14,8 @@ A formalization of Natural Semantics for the imperative programming language **W
 
 This is a Coq formalization of the natural semantics for the imperative programming language **While**. The formalization includes the following topics:
 * Framework_common.v: Num, State, Aexp, Bexp, Stm (syntax only).
+
+The Natural Semantics part:
 * ApplicationNS.v: examples of simple proof trees, semantic equivalence proofs and a determinism proof for natural semantics.
 * FrameworkAS.v: framework for Hoare logic and annotated programs. It also includes a soundness and completeness proof.
 * ApplicationAS.v: examples of Hoare logic and annotated program proofs.
@@ -21,9 +23,12 @@ This is a Coq formalization of the natural semantics for the imperative programm
 * ApplicationScopes.v: examples of Blocks and Procedures proofs.
 * ExtensionsNS.v: a non-deterministic extension of **While** with an or-rule and an extension of **While** including Break and Continue statements. 
 
+The Structural Operational Semantics part:
+*
+
 ### Purpose
 
-This formalization was made as a bachelor thesis by Loes Kruger. Its purpose is to be used in the course Semantics and Correctness to help students understand the proofs better.
+This formalization was made as a bachelor thesis by Elly Bahovska and Loes Kruger. Its purpose is to be used in the course Semantics and Correctness to help students understand the proofs better.
 
 ### Getting started
 
@@ -33,7 +38,7 @@ There are dependecies between the files so some of the files needed to be compil
 Go to the directory called 'Coq'.
 In this directory should be another directory called 'bin'.
 Make sure the file that needs to be imported is located in the 'bin' directory.
-Open command line and run the following command:
+Open command line and run the following command for the files in the natural semantics part:
 ```
 coqc -Q . NS Name.v
 ```
