@@ -15,15 +15,16 @@ A formalization of Natural and Structural Operational Semantics for the imperati
 This is a Coq formalization of the natural semantics for the imperative programming language **While**. The formalization includes the following topics:
 * Framework_common.v: Num, State, Aexp, Bexp, Stm (syntax only).
 
-The Natural Semantics part:
-* ApplicationNS.v: examples of simple proof trees, semantic equivalence proofs and a determinism proof for natural semantics.
+The Natural Semantics part (in the NS_Formalization directory):
+* FrameworkNS.v: framework for Natural Semantics.
+* ApplicationNS.v: examples of simple proof trees, semantic equivalence proofs and a determinism proof for Natural Semantics.
 * FrameworkAS.v: framework for Hoare logic and annotated programs. It also includes a soundness and completeness proof.
 * ApplicationAS.v: examples of Hoare logic and annotated program proofs.
 * FrameworkScopes.v: an extension of **While** including Blocks and Procedures. Procedures in dynamic and static scopes.
 * ApplicationScopes.v: examples of Blocks and Procedures proofs.
 * ExtensionsNS.v: a non-deterministic extension of **While** with an or-rule and an extension of **While** including Break and Continue statements. 
 
-The Structural Operational Semantics part:
+The Structural Operational Semantics part (in the SOS_Formalization directory):
 *
 
 ### Purpose
