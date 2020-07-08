@@ -5,6 +5,8 @@ A formalization of Natural and Structural Operational Semantics for the imperati
 
 [Made with the help of Software Foundations](https://softwarefoundations.cis.upenn.edu/)
 
+###Note
+Refences that read "the book" refer to "Semantics with Applications: A formal introduction" by Nielson and Nielson. 
 
 ### Table of contents
 * [Introduction](#introduction)
