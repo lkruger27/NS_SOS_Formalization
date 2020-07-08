@@ -5,6 +5,7 @@ A formalization of Natural and Structural Operational Semantics for the imperati
 
 [Made with the help of Software Foundations](https://softwarefoundations.cis.upenn.edu/)
 
+
 ### Table of contents
 * [Introduction](#introduction)
 * [Purpose](#purpose)
@@ -15,7 +16,7 @@ A formalization of Natural and Structural Operational Semantics for the imperati
 This is a Coq formalization of the natural semantics for the imperative programming language **While**. The formalization includes the following topics:
 * Framework_common.v: Num, State, Aexp, Bexp, Stm (syntax only).
 
-The Natural Semantics part (in the NS_Formalization directory):
+The Natural Semantics part (in the Formalization_NS directory):
 * FrameworkNS.v: framework for Natural Semantics.
 * ApplicationNS.v: examples of simple proof trees, semantic equivalence proofs and a determinism proof for Natural Semantics.
 * FrameworkAS.v: framework for Hoare logic and annotated programs. It also includes a soundness and completeness proof.
@@ -24,8 +25,16 @@ The Natural Semantics part (in the NS_Formalization directory):
 * ApplicationScopes.v: examples of Blocks and Procedures proofs.
 * ExtensionsNS.v: a non-deterministic extension of **While** with an or-rule and an extension of **While** including Break and Continue statements. 
 
-The Structural Operational Semantics part (in the SOS_Formalization directory):
-*
+The Structural Operational Semantics part (in the Formalisation_SOS directory):
+* Framework_SOS.v: The basic framework for Structural Operatonal Semantics; introducisng the star sequence.
+* Exercises.v: Some basic derivations with SOS.
+* Strong_progress.v: proving that each step is possible for **WHile**.
+* Multi_k.v: introducing a sequence of k steps.
+* SOS_star_k.v: Proving equivalence between star sequence and one with k steps; determinism of SOS for **While**.
+* Corr_SOS_NS.v: Proving equivalence between Natural and Structural Operational Semantics.
+* Framework_NS.v: Functinally equivalent to FrameworNS.v from Formalization_NS directory. Present for easier access.
+* Framework_common.v: Equivalent to Framewor_Common.v in the above directory. Present for easier access.
+
 
 ### Purpose
 
