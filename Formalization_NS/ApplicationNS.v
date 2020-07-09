@@ -452,38 +452,38 @@ Qed.
 End Repeat.
 (*--------------------------------Determinism--------------------------------*)
 (* Natural Semantics is deterministic *)
-Theorem Seval_deterministic: forall S st st1 st2,
-     << S, st >> --> st1  ->
-     << S, st >> --> st2 ->
-     st1 = st2.
+Theorem Seval_deterministic: forall S s s' s'',
+     << S, s >> --> s'  ->
+     << S, s >> --> s'' ->
+     s' = s''.
 Proof.
-  intros S st st1 st2 E1 E2.
-  generalize dependent st2.
-  induction E1; intros st2 E2; inversion E2; subst.
+  intros S s s' s'' H1 H2.
+  generalize dependent s''.
+  induction H1; intros s'' H2; inversion H2; subst.
   - (* ass *) reflexivity.
   - (* skip *) reflexivity.
   - (* comp *)
-    assert (st' = st'0) as EQ1.
-    { apply IHE1_1; assumption. }
+    assert (st' = st'0) as H3.
+    { apply IHSeval1; assumption. }
     subst st'0.
-    apply IHE1_2. assumption.
+    apply IHSeval2. assumption.
   - (* if tt, b1 evaluates to true *)
-      apply IHE1. assumption.
+      apply IHSeval. assumption.
   - (* if tt,  b1 evaluates to false (contradiction) *)
-      rewrite H in H5. discriminate H5.
+      rewrite H in H7. discriminate H7.
   - (* if ff, b1 evaluates to true (contradiction) *)
-      rewrite H in H5. discriminate H5.
+      rewrite H in H7. discriminate H7.
   - (* if ff, b1 evaluates to false *)
-      apply IHE1. assumption.
+      apply IHSeval. assumption.
   - (* while tt, b1 evaluates to true *)
-      assert (st' = st'0) as EQ1.
-      { apply IHE1_1; assumption. }
+      assert (st' = st'0) as H3.
+      { apply IHSeval1; assumption. }
       subst st'0.
-      apply IHE1_2. assumption.
+      apply IHSeval2. assumption.
   - (* while tt, b1 evaluates to false (contradiction) *)
-    rewrite H in H4. discriminate H4.
+    rewrite H in H5. discriminate H5.
   - (* while ff, b1 evaluates to true (contradiction) *)
-    rewrite H in H3. discriminate H3.
+    rewrite H in H4. discriminate H4.
   - (* while ff, b1 evaluates to false *)
     reflexivity.
 Qed.
