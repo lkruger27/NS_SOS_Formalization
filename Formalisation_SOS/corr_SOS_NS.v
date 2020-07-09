@@ -1,7 +1,7 @@
 Set warnings "-notation-overridden,-parsing".
 Require Import Framework_common.
-Require Import Framework_SOS_match.
-Require Import Framework_NS_match.
+Require Import Framework_SOS.
+Require Import Framework_NS.
 Require Import multi_k.
 Require Import SOS_star_k.
 From Coq Require Import BinNat.
