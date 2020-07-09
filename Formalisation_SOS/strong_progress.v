@@ -1,6 +1,6 @@
 Set warnings "-notation-overridden,-parsing".
 Require Import Framework_common.
-Require Import Framework_SOS_match.
+Require Import Framework_SOS.
 From Coq Require Import BinNat.
 From Coq Require Import omega.Omega.
 From Coq Require Import Strings.String.
