@@ -12,6 +12,7 @@ Refences that read "the book" refer to "Semantics with Applications: A formal in
 * [Introduction](#introduction)
 * [Purpose](#purpose)
 * [Getting started](#getting-started)
+* [Usage](#usage)
 
 ### Introduction
 
@@ -60,3 +61,6 @@ Where 'Name' is the name of the file you want to import.
 After this, a couple of new files are in the 'bin' directory. The 'Name.vo' needs to be copied to the directory where the Coq files of the formalization are.
 If this does not work, try the other options stated in [Software Foundations Chapter Induction](https://softwarefoundations.cis.upenn.edu/lf-current/Induction.html)
 
+### Usage
+
+You are free to use the files on this Github page for educational purposes.
