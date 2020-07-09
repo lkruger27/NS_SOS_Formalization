@@ -63,4 +63,4 @@ If this does not work, try the other options stated in [Software Foundations Cha
 
 ### Usage
 
-You are free to use the files on this Github page for educational purposes.
+You are free to use the files on this GitHub page, as long as you cite our work.
