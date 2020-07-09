@@ -5,7 +5,7 @@ A formalization of Natural and Structural Operational Semantics for the imperati
 
 [Made with the help of Software Foundations](https://softwarefoundations.cis.upenn.edu/)
 
-###Note
+### Note
 Refences that read "the book" refer to "Semantics with Applications: A formal introduction" by Nielson and Nielson. 
 
 ### Table of contents
@@ -28,14 +28,14 @@ The Natural Semantics part (in the Formalization_NS directory):
 * ExtensionsNS.v: a non-deterministic extension of **While** with an or-rule and an extension of **While** including Break and Continue statements. 
 
 The Structural Operational Semantics part (in the Formalisation_SOS directory):
-* Framework_SOS.v: The basic framework for Structural Operatonal Semantics; introducisng the star sequence.
+* Framework_SOS.v: The basic framework for Structural Operatonal Semantics; introducing the star sequence.
 * Exercises.v: Some basic derivations with SOS.
-* Strong_progress.v: proving that each step is possible for **WHile**.
+* Strong_progress.v: proving that each step is possible for **While**.
 * Multi_k.v: introducing a sequence of k steps.
 * SOS_star_k.v: Proving equivalence between star sequence and one with k steps; determinism of SOS for **While**.
 * Corr_SOS_NS.v: Proving equivalence between Natural and Structural Operational Semantics.
-* Framework_NS.v: Functinally equivalent to FrameworNS.v from Formalization_NS directory. Present for easier access.
-* Framework_common.v: Equivalent to Framewor_Common.v in the above directory. Present for easier access.
+* Framework_NS.v: Functionally equivalent to FrameworkNS.v from Formalization_NS directory. Present for easier access.
+* Framework_common.v: Equivalent to Framework_Common.v in the above directory. Present for easier access.
 
 
 ### Purpose
