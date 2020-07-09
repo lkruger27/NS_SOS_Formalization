@@ -36,6 +36,8 @@ The Structural Operational Semantics part (in the Formalisation_SOS directory):
 * Corr_SOS_NS.v: Proving equivalence between Natural and Structural Operational Semantics.
 * Framework_NS.v: Functionally equivalent to FrameworkNS.v from Formalization_NS directory. Present for easier access.
 * Framework_common.v: Equivalent to Framework_Common.v in the above directory. Present for easier access.
+* Framework_SOS_small_exp.v: A version of the SOS framework, that evaluates arithmetical and boolean expression in small steps too. Not compeltely tested.
+* Exersisces_small_exp.v: The cases for which the above version is tested and working.
 
 
 ### Purpose
