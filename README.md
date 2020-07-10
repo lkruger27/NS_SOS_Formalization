@@ -39,6 +39,7 @@ The Structural Operational Semantics part (in the Formalisation_SOS directory):
 * Framework_common.v: Equivalent to Framework_Common.v in the above directory. Present for easier access.
 * Framework_SOS_small_exp.v: A version of the SOS framework, that evaluates arithmetical and boolean expression in small steps too. Not compeltely tested.
 * Exersisces_small_exp.v: The cases for which the above version is tested and working.
+* Abort_sos.v: Two versions of extending **while** with abort rule. Both diviating from theory.
 
 
 ### Purpose
